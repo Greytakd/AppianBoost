@@ -1,0 +1,28 @@
+{
+  "manifest_version": 3,
+  "name": "AppianBoost",
+  "version": "1.0.0",
+  "description": "Boost your Appian development workflow with enhanced UI tools and shortcuts",
+  "author": "Dylan Greytak",
+  "permissions": [
+    "activeTab",
+    "storage"
+  ],
+  "host_permissions": [
+    "*://*.appiancloud.com/*",
+    "*://*.appian.com/*"
+  ],
+  "action": {
+    "default_popup": "src/popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": ["*://*.appiancloud.com/*", "*://*.appian.com/*"],
+      "js": ["src/content.js"],
+      "css": ["src/styles.css"]
+    }
+  ],
+  "background": {
+    "service_worker": "src/background.js"
+  }
+}

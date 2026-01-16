@@ -1,0 +1,99 @@
+/* AppianBoost Injected Styles */
+
+/* ==========================================
+   Dark Mode - Base styles for elements without inline styles
+   ========================================== */
+
+/* Body background */
+.appianboost-dark {
+  background-color: #1a1a1a !important;
+}
+
+/* SVG icons */
+.appianboost-dark svg:not(.SafeImageWidget---image) path {
+  fill: #c0c0c0 !important;
+}
+
+/* Links */
+.appianboost-dark a {
+  color: #6cb2eb !important;
+}
+
+/* Tables without inline styles */
+.appianboost-dark table {
+  background-color: #252526 !important;
+}
+
+.appianboost-dark th {
+  background-color: #2d2d30 !important;
+  color: #e0e0e0 !important;
+}
+
+.appianboost-dark td {
+  color: #e0e0e0 !important;
+}
+
+.appianboost-dark tr:hover td {
+  background-color: #333 !important;
+}
+
+/* Custom scrollbars */
+.appianboost-dark ::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+.appianboost-dark ::-webkit-scrollbar-track {
+  background: #1e1e1e;
+}
+
+.appianboost-dark ::-webkit-scrollbar-thumb {
+  background: #555;
+  border-radius: 5px;
+}
+
+.appianboost-dark ::-webkit-scrollbar-thumb:hover {
+  background: #666;
+}
+
+/* ==========================================
+   Copy Notification
+   ========================================== */
+.appianboost-notification {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #333;
+  color: #fff;
+  padding: 12px 20px;
+  border-radius: 8px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  font-size: 14px;
+  z-index: 999999;
+  animation: slideIn 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.appianboost-notification.fade-out {
+  animation: fadeOut 0.3s ease forwards;
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
