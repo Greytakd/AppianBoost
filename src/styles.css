@@ -37,6 +37,131 @@
   background-color: #333 !important;
 }
 
+/* Application Header - "Let's get started" hero section */
+.appianboost-dark [class*="ApplicationHeaderLayout---header"],
+.appianboost-dark [class*="ApplicationHeaderLayout---designer"],
+.appianboost-dark .ApplicationHeaderLayout---header,
+.appianboost-dark .ApplicationHeaderLayout---designer {
+  background: #1e1e1e !important;
+  background-image: none !important;
+  background-color: #1e1e1e !important;
+}
+
+/* Top title bar */
+.appianboost-dark [class*="ApplicationHeaderLayout---title"] {
+  background-color: #1e1e1e !important;
+}
+
+/* Text styled for light backgrounds - invert for dark mode */
+.appianboost-dark [class*="---inLightBackground"],
+.appianboost-dark [class*="TitleText---page_header"] {
+  color: #e0e0e0 !important;
+}
+
+/* Billboard banners (Community, version banners on right side) */
+.appianboost-dark [class*="BillboardLayout---billboard"] {
+  filter: brightness(0.7) !important;
+}
+
+/* Cards and card containers */
+.appianboost-dark [class*="Card---card"],
+.appianboost-dark [class*="CardLayout"],
+.appianboost-dark [class*="ApplicationCard"] {
+  background-color: #252526 !important;
+  background-image: none !important;
+}
+
+/* Recent applications cards */
+.appianboost-dark [class*="RecentApplicationCard"],
+.appianboost-dark [class*="RecentObject"] {
+  background-color: #252526 !important;
+}
+
+/* Buttons with light backgrounds */
+.appianboost-dark [class*="Button---btn"] {
+  background-color: #3c3c3c !important;
+  color: #e0e0e0 !important;
+  border-color: #555 !important;
+}
+
+.appianboost-dark [class*="Button---secondary"] {
+  background-color: #2d2d30 !important;
+  color: #e0e0e0 !important;
+  border-color: #555 !important;
+}
+
+.appianboost-dark [class*="Button---primary"] {
+  /* Keep primary buttons with accent color */
+  color: #fff !important;
+}
+
+/* Input fields and search boxes */
+.appianboost-dark input,
+.appianboost-dark [class*="SearchBox"],
+.appianboost-dark [class*="TextField---text"] {
+  background-color: #3c3c3c !important;
+  color: #e0e0e0 !important;
+  border-color: #555 !important;
+}
+
+/* Dropdowns */
+.appianboost-dark select,
+.appianboost-dark [class*="Dropdown"],
+.appianboost-dark [class*="Select---"] {
+  background-color: #3c3c3c !important;
+  color: #e0e0e0 !important;
+}
+
+/* Paragraph text */
+.appianboost-dark [class*="ParagraphText---"],
+.appianboost-dark [class*="elements---global_p"] {
+  color: #e0e0e0 !important;
+}
+
+/* Stamp widgets */
+.appianboost-dark [class*="StampWidget---stamp"] {
+  background-color: #3c3c3c !important;
+  color: #e0e0e0 !important;
+}
+
+.appianboost-dark [class*="StampWidget---bg_light"] {
+  background-color: #3c3c3c !important;
+}
+
+/* Generic white/light background overrides */
+.appianboost-dark [class*="---white"],
+.appianboost-dark [class*="---light"],
+.appianboost-dark [class*="---bg_light"],
+.appianboost-dark [class*="Background---white"] {
+  background-color: #3c3c3c !important;
+}
+
+/* Panels and sections */
+.appianboost-dark [class*="Panel---"],
+.appianboost-dark [class*="Section---"],
+.appianboost-dark [class*="Box---"] {
+  background-color: #252526 !important;
+}
+
+/* Modal and dialog backgrounds */
+.appianboost-dark [class*="Dialog---"],
+.appianboost-dark [class*="Modal---"] {
+  background-color: #252526 !important;
+}
+
+/* Menu items */
+.appianboost-dark [class*="Menu---"],
+.appianboost-dark [class*="MenuItem---"] {
+  background-color: #2d2d30 !important;
+  color: #e0e0e0 !important;
+}
+
+/* Hover states for interactive elements */
+.appianboost-dark [class*="Card---card"]:hover,
+.appianboost-dark [class*="MenuItem---"]:hover {
+  background-color: #333 !important;
+}
+
 /* Custom scrollbars */
 .appianboost-dark ::-webkit-scrollbar {
   width: 10px;
@@ -55,6 +180,7 @@
 .appianboost-dark ::-webkit-scrollbar-thumb:hover {
   background: #666;
 }
+
 
 /* ==========================================
    Copy Notification
